@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  background-color: white;
+  margin-top: 5%;
+}
+
+#welcome-section {
+  background-image: url('../resources/img/welcome.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: left;
+  padding: 100px 0;
+  height: 100vh; /* Set height to full viewport height */
+}
+
+#about-section {
+  padding: 50px 0;
+}
+
+.about-img {
+  background-image: url('../resources/img/pods/img.png'); /* Replace 'example.jpg' with the actual path of your image */
+  background-size: cover;
+  background-position: center;
+}
+
+#contact {
+    text-align:center
+}
+
+#contact-heading {
+    background-color: #ddf5fc;
+    margin: -1.6%;
+}
+
+#contact-container {
+    border: 1px solid #ddf5fc;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* Removed for now */
+#contact .info i {
+    font-size: 20px;
+    color: #5fcf80;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #ecf9f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    background-size: cover;
+}
+
+#contact .info #location {
+    background-image: url('../resources/img/geo-alt.svg');
+}
+
+#contact .info #envelope {
+    background-image: url('../resources/img/envelope.svg');
+}
+
+#contact .info #phone {
+    background-image: url('../resources/img/phone.svg');
+}

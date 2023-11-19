@@ -1,0 +1,6 @@
+Mentor
+./venv/
+./src/resources/unused/*
+*.zip
+.idea
+.DS_Store
