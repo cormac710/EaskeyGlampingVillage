@@ -19,22 +19,27 @@ body, html {
   padding: 100px 0;
   height: 100vh; /* Set height to full viewport height */
 }
+@media (max-width: 767px) {
+  #about-section, #the-area, #contact {
+    padding: 50px 0;
+}
+}
 
-#about-section, #the-area, #contact {
-  padding: 50px 0;
-  /*height: 100vh; /* 100% of the viewport height */
+    /* Media query for desktop screens */
+@media (min-width: 768px) {
+  #about-section, #the-area, #contact {
+    padding: 50px 0;
+    height: 100vh; /* 100% of the viewport height */
+}
 }
 
 .full-height-section {
   position: relative;
   display: flex;
   justify-content: center;
-
-  padding: 20px;
 }
 
 .about-img {
-  background-image: url('../resources/img/pods/img.png'); /* Replace 'example.jpg' with the actual path of your image */
   background-size: cover;
   background-position: center;
 }
@@ -52,33 +57,4 @@ body, html {
     border: 1px solid #ddf5fc;
     padding: 20px;
     margin-bottom: 30px;
-}
-
-
-/* Removed for now */
-#contact .info i {
-    font-size: 20px;
-    color: #5fcf80;
-    float: left;
-    width: 44px;
-    height: 44px;
-    background: #ecf9f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-    background-size: cover;
-}
-
-#contact .info #location {
-    background-image: url('../resources/img/geo-alt.svg');
-}
-
-#contact .info #envelope {
-    background-image: url('../resources/img/envelope.svg');
-}
-
-#contact .info #phone {
-    background-image: url('../resources/img/phone.svg');
 }
